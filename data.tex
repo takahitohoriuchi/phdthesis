@@ -1,0 +1,77 @@
+\documentclass[a4paper,12pt]{jsreport}
+% jsarticleは短めの論文につかう。jsreportは長めの論文
+\usepackage{bm}
+\usepackage[dvipdfmx]{graphicx}%図
+\usepackage{ascmac}
+\usepackage{bm}
+\usepackage{amsmath}
+% DEBUG:このlistingsが読み込み失敗している
+% \usepackage{listings, plistings}% ソースコード用
+\usepackage{listings}% ソースコード用
+\usepackage{xcolor}
+
+\lstset{
+  % language=JavaScript,        % 言語の指定
+  % basicstyle=\ttfamily\small, % 基本的なフォントスタイル
+  % keywordstyle=\color{blue},  % キーワードの色
+  stringstyle=\color{red},    % 文字列の色
+  % commentstyle=\color{green}, % コメントの色
+  % morecomment=[l][\color{magenta}]{\#},
+  % breaklines=true,            % 長い行を折り返す
+  % numbers=left,               % 行番号の位置
+  % numberstyle=\tiny,          % 行番号のスタイル
+  % frame=single,               % 枠線のスタイル
+  % tabsize=4                   % タブのサイズ
+}
+% \usepackage{subfiles}
+
+% ここでAPAのテスト
+% \usepackage[backend=biber, style=apa]{biblatex}
+% \addbibresource{reference.bib}
+
+% このdocumentclassからbeginまでを、プリアンブルと呼ぶ
+\includeonly{
+  introduction.tex,
+  % ./part2/chapter1.tex
+  appendix.tex
+  } 
+\begin{document}
+\tableofcontents
+
+% :::タイトル
+\title{身体運動の創造的学びの一人称研究}
+\author{堀内隆仁}
+\maketitle
+
+% :::アブスト
+\include{abstract.tex}
+% \input{abstract.tex}
+
+% :::はじめに
+\include{introduction.tex}
+
+% % :::第一部
+\include{./part1/chapter1.tex}
+
+
+% % :::第二部
+\include{./part2/chapter1.tex}
+
+% :::おわりに
+
+
+% :::参考文献
+% 下のサイトにいろんなスタイルあり。どれかを選ぶ。
+% https://mathlandscape.com/latex-bibstyles/
+
+\bibliographystyle{jplain}%連番形式
+% \bibliographystyle{acm}%ACM形式
+% \bibliographystyle{apalike}
+% \bibliographystyle{apa}
+\bibliography{reference}
+% \printbibliography
+
+% :::付録
+\input{./appendix.tex}
+
+\end{document}

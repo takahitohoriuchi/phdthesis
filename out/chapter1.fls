@@ -1,0 +1,8 @@
+PWD /Users/takahitohoriuchi/Desktop/Ph.D Thesis
+INPUT /usr/local/texlive/2020/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf-var/web2c/eptex/platex.fmt
+INPUT /Users/takahitohoriuchi/Desktop/Ph.D Thesis/part2/chapter1.tex
+OUTPUT out/chapter1.log
