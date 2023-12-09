@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2021.3.9)  9 DEC 2023 12:51
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2021.3.9)  9 DEC 2023 13:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -315,27 +315,27 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 75.
+(Font)              scaled to size 4.805pt on input line 82.
 
-Overfull \hbox (12.39108pt too wide) detected at line 112
+Overfull \hbox (12.39108pt too wide) detected at line 119
 \OML/cmm/b/it/10 p[] \OT1/cmr/m/n/10 = \OT1/cmr/bx/n/10 PV\OML/cmm/b/it/10 p \OT1/cmr/m/n/10 = [] [] []
  []
 
 [18]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 131.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 140.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
 ) [19] (out/data.aux (out/abstract.aux) (out/introduction.aux) (out/./part1/chapter1.aux) (out/./part2/chapter1.aux)) ) 
 Here is how much of TeX's memory you used:
  4060 strings out of 479488
  53594 string characters out of 5871510
- 376602 words of memory out of 5000000
+ 377602 words of memory out of 5000000
  21684 multiletter control sequences out of 15000+600000
  424431 words of font info for 121 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  68i,10n,74p,283b,1227s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/data.dvi (12 pages, 21816 bytes).
+Output written on out/data.dvi (12 pages, 22896 bytes).
