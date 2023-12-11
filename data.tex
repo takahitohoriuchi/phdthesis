@@ -1,15 +1,19 @@
-\documentclass[a4paper,12pt]{jsreport}
+\documentclass[a4paper,11pt]{jsreport}
 % jsarticleは短めの論文につかう。jsreportは長めの論文
 \usepackage{bm}
 \usepackage[dvipdfmx]{graphicx}%図
+\usepackage{booktabs}%表を美しく描く
 \usepackage{ascmac}
 \usepackage{bm}
 \usepackage{amsmath}
+\usepackage{todonotes}
+\usepackage{okumacro}
+% \renewcommand{\rubysize}{0.2} % ルビのサイズを半分に設定
 % DEBUG:このlistingsが読み込み失敗している
 % \usepackage{listings, plistings}% ソースコード用
 \usepackage{listings}% ソースコード用
 \usepackage{xcolor}
-
+\setcounter{tocdepth}{3}
 \lstset{
   % language=JavaScript,        % 言語の指定
   % basicstyle=\ttfamily\small, % 基本的なフォントスタイル
@@ -32,11 +36,21 @@
 % このdocumentclassからbeginまでを、プリアンブルと呼ぶ
 \includeonly{
   introduction.tex,
-  % ./part2/chapter1.tex
+  ./part1/chapter1.tex,
+  ./part1/chapter2.tex,
+  ./part1/chapter3.tex,
+  ./part1/chapter4.tex,
+  ./part1/chapter5.tex,
+  ./part2/chapter1.tex,
+  ./part2/chapter2.tex,
+  ./part2/chapter3.tex
   appendix.tex
   } 
 \begin{document}
+% 目次
 \tableofcontents
+% \listoffigures
+% \listoftables
 
 % :::タイトル
 \title{身体運動の創造的学びの一人称研究}
@@ -44,18 +58,24 @@
 \maketitle
 
 % :::アブスト
-\include{abstract.tex}
-% \input{abstract.tex}
+% \include{abstract.tex}
+% % \input{abstract.tex}
 
-% :::はじめに
-\include{introduction.tex}
+% % :::はじめに
+% \include{introduction.tex}
 
 % % :::第一部
 \include{./part1/chapter1.tex}
+\include{./part1/chapter2.tex}
+\include{./part1/chapter3.tex}
+\include{./part1/chapter4.tex}
+\include{./part1/chapter5.tex}
 
 
 % % :::第二部
 \include{./part2/chapter1.tex}
+\include{./part2/chapter2.tex}
+\include{./part2/chapter3.tex}
 
 % :::おわりに
 
@@ -65,10 +85,10 @@
 % https://mathlandscape.com/latex-bibstyles/
 
 \bibliographystyle{jplain}%連番形式
+\bibliography{reference}
 % \bibliographystyle{acm}%ACM形式
 % \bibliographystyle{apalike}
 % \bibliographystyle{apa}
-\bibliography{reference}
 % \printbibliography
 
 % :::付録
